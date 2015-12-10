@@ -1,26 +1,26 @@
 ### Apktool
-**This is the repository for Apktool. If you are looking for the Apktool website. Click [here](https://github.com/iBotPeaches/Apktool/tree/gh-pages).**
+Apktool Documentation
 
+This is the repository for the https://duanlang1006.github.io/Apktool site. If you are looking for the Apktool tool repository. Click here.
 
-[![Build Status](https://travis-ci.org/iBotPeaches/Apktool.svg?branch=master)](https://travis-ci.org/iBotPeaches/Apktool)
-[![Software License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)](https://github.com/iBotPeaches/Apktool/blob/master/LICENSE)
-[![Project Status](http://stillmaintained.com/iBotPeaches/Apktool.png)](http://stillmaintained.com/iBotPeaches/Apktool)
+This repository contains the files used in generating the Github Pages site. It's possible to test them locally so you can test changes prior to making pull requests.
 
-It is a tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications; it makes possible to debug smali code step by step. Also it makes working with app easier because of project-like files structure and automation of some repetitive tasks like building apk, etc.
+How to run locally
 
-It is NOT intended for piracy and other non-legal uses. It could be used for localizing, adding some features or support for custom platforms and other GOOD purposes. Just try to be fair with authors of an app, that you use and probably like.
+Install Ruby
+Install Bundler gem install bundler
+Clone repo git clone git@github.com:iBotPeaches/Apktool.git
+Checkout wiki git checkout gh-pages
+Install dependencies bundle install
+Spin up local server jekyll serve --baseurl ''
+Known Issues
 
-#### Support
-- [Project Page](http://ibotpeaches.github.io/Apktool/)
-- [#apktool on freenode](http://webchat.freenode.net/?channels=apktool)
+Files in _includes have to be written with raw HTML
 
-#### Links
-- [Downloads](https://bitbucket.org/iBotPeaches/apktool/downloads)
-- [How to Build](http://ibotpeaches.github.io/Apktool/build/)
-- [Documentation](http://ibotpeaches.github.io/Apktool/documentation/)
-- [Bug Reports](https://github.com/iBotPeaches/Apktool/issues)
-- [Changelog/Information](http://ibotpeaches.github.io/Apktool/changes/)
-- [XDA Post](http://forum.xda-developers.com/showthread.php?p=28366939)
-- [Source (Github)](https://github.com/iBotPeaches/Apktool)
-- [Source (Bitbucket)](https://bitbucket.org/iBotPeaches/apktool/)
+Not sure how to execute markdown via an include command. Doesn't work with versions of dependencies installed on Github pages
+Dates in _data/releases.yml have to include the timestamp like so 2010-03-02 00:00:0
 
+I believe this is a YAML limitation, so make sure to always have a 00:00:0 timestamp added to days
+Links in _data/releases.yml have to be hardcoded to live site
+
+appending /Apktool/ because {{ site.baseurl }} doesn't work
