@@ -1,7 +1,7 @@
 ### Apktool
 Apktool Documentation
 
-This is the repository for the https://duanlang1006.github.io/Apktool site. If you are looking for the Apktool tool repository. Click here.
+This is the repository for the https://github.com/duanlang1006/Apktool.git site. If you are looking for the Apktool tool repository. Click here.
 
 This repository contains the files used in generating the Github Pages site. It's possible to test them locally so you can test changes prior to making pull requests.
 
